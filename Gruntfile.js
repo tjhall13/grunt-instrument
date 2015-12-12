@@ -6,8 +6,6 @@
  * Licensed under the MIT license.
  */
 
-'use strict';
-
 module.exports = function(grunt) {
 	grunt.initConfig({
 		jshint: {
@@ -20,4 +18,5 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-jshint');
 
 	grunt.registerTask('default', ['jshint']);
+	grunt.registerTask('test', ['instrument']);
 };
